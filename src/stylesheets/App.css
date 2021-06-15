@@ -1,23 +1,48 @@
-.user {
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: rgb(12, 11, 11);
+}
+
+.class__list_ul {
+  width: 500px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.classlist {
+  width: 310px;
+  background-color: green;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  margin-right: 20px;
+}
+
+.card__title {
+  padding-left: 10px;
+}
+.card__description {
+  padding-left: 10px;
+}
+.form__input-text {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-}
-
-.colorRed {
-  background-color: red;
-  width: 500px;
-  height: 500px;
-  margin-bottom: 100px;
-}
-
-.azul {
-  background-color: blue;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 100px;
-}
-.ovejita {
-  width: 50px;
+  background-color: black;
+  border: 2px solid chartreuse;
 }

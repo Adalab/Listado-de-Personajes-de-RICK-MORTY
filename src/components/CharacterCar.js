@@ -2,7 +2,7 @@ import React from "react";
 
 const CharacterCar = (props) => {
   return (
-    <li className="user">
+    <li className="classlist">
       {/* <a href={}>Ver detalle</a> */}
       <img
         className="card__img"

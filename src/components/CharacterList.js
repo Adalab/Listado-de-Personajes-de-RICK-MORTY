@@ -7,7 +7,7 @@ const CharacterList = (props) => {
   });
   return (
     <section>
-      <ul>{userElement}</ul>
+      <ul className="class__list_ul">{userElement}</ul>
     </section>
   );
 };
