@@ -8,9 +8,13 @@ const Filters = (props) => {
     });
   };
 
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+  };
+
   return (
     <section>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           className="form__input-text"
           type="text"

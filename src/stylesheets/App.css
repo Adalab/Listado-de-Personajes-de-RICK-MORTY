@@ -46,3 +46,7 @@ body {
   background-color: black;
   border: 2px solid chartreuse;
 }
+
+.hidden {
+  visibility: hidden;
+}
