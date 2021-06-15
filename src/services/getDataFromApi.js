@@ -1,17 +1,14 @@
 const getDataFromApi = () => {
-  return fetch("https://randomuser.me/api/?results=10")
+  return fetch("https://rickandmortyapi.com/api/character")
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       return data.results.map((user) => {
         return {
-          id: user.login.uuid,
-          username: user.login.username,
-          city: user.location.city,
-          country: user.location.country,
-          name: user.name.first + " " + user.name.last,
-          email: user.email,
-          gender: user.gender,
-          image: user.picture.large,
+          name: user.name,
+          id: user.id,
+          species: user.species,
+          image: user.image,
         };
       });
     });

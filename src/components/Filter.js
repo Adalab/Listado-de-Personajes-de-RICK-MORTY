@@ -1,5 +1,4 @@
 import React from "react";
-import FilterByName from "./FilterByName";
 
 const Filter = () => {
   return (

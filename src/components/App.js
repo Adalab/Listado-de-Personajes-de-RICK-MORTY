@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import UserList from "./UserList";
-import Filter from "./Filter";
-import UserDetail from "./UserDetail";
+import CharacterList from "./CharacterList";
 import getDataFromApi from "../services/getDataFromApi";
+import CharacterCar from "./CharacterCar";
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -12,10 +11,8 @@ const App = () => {
 
   return (
     <div>
-      <h1>Directorio de personas</h1>
-      <Filter />
-      <UserList users={users} />
-      <UserDetail />
+      <h1>Directorio de Rick y Morty</h1>
+      <CharacterList users={users} />
     </div>
   );
 };

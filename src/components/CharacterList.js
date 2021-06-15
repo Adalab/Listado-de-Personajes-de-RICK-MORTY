@@ -1,14 +1,14 @@
 import React from "react";
-import User from "./User";
+import User from "./CharacterCar";
 
-const UserList = (props) => {
+const CharacterList = (props) => {
   const userElement = props.users.map((user) => {
     return <User key={user.id} user={user} />;
   });
   return (
     <section>
-      <ul className="cards">{userElement}</ul>
+      <ul>{userElement}</ul>
     </section>
   );
 };
-export default UserList;
+export default CharacterList;
