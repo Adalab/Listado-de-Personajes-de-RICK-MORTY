@@ -7,7 +7,7 @@ import "../stylesheets/App.css";
 
 const App = () => {
   const [users, setUsers] = useState([]);
-  const [nameFilter, setnameFilter] = useState("name");
+  const [nameFilter, setnameFilter] = useState("");
 
   useEffect(() => {
     getDataFromApi().then((data) => setUsers(data));
@@ -17,6 +17,8 @@ const App = () => {
   const handleFilter = (data) => {
     console.log("..por toma filtro!", data);
   };
+
+  const filteredCharacters = users;
 
   return (
     <div>
