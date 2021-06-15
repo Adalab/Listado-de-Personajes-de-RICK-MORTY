@@ -2,8 +2,12 @@ import React from "react";
 
 const Filters = (props) => {
   const handleChange = (ev) => {
-    props.handleFilter(ev.target.value, "name");
+    props.handleFilter({
+      value: ev.target.value,
+      key: "name",
+    });
   };
+
   return (
     <section>
       <form>
