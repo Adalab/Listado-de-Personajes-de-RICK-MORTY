@@ -1,12 +1,9 @@
 import React from "react";
 
-const Filters = () => {
-  // const handleChange = (ev) => {
-  //   props.handleFilter({
-  //     value: ev.target.value,
-  //     key: "name",
-  //   });
-  // };
+const Filters = (props) => {
+  const handleChange = (ev) => {
+    props.handleFilter(ev.target.value, "name");
+  };
   return (
     <section>
       <form>
@@ -16,7 +13,7 @@ const Filters = () => {
           name="name"
           placeholder="Ric"
           id="name"
-          //onChange={handleChange}
+          onChange={handleChange}
         />
       </form>
     </section>
