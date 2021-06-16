@@ -4,7 +4,11 @@ import User from "./CharacterCar";
 
 const CharacterList = (props) => {
   if (props.users.length === 0) {
-    return <p>Esto no es una elección!!!</p>;
+    return (
+      <div className="problem_image">
+        <img src="https://media.giphy.com/media/YO45ydzTCoHdoR074O/giphy.gif" />
+      </div>
+    );
   }
 
   const userElement = props.users.map((user) => {
@@ -12,7 +16,7 @@ const CharacterList = (props) => {
   });
 
   return (
-    <section>
+    <section className="filter__home">
       <ul className="class__list_ul">{userElement}</ul>
     </section>
   );

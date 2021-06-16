@@ -47,7 +47,12 @@ const App = () => {
   return (
     <div>
       <h1>
-        <img className="logo__img" src={logo} alt="Ricky and Morty" />
+        <img
+          className="logo__img"
+          src={logo}
+          alt="Ricky and Morty"
+          title="Ricky and Morty"
+        />
       </h1>
       <Switch>
         <Route exact path="/">

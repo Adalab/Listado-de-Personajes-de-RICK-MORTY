@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: rgb(12, 11, 11);
+  background-color: black;
 }
 .logo__img {
   width: 350px;
@@ -23,14 +23,18 @@ body {
   margin-bottom: 20px;
 }
 
-.class__list_ul {
-  grid-template-columns: 200px 200px 200px 200px;
-  display: grid;
-  width: 800px;
-  position: absolute;
+.filter__home {
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.class__list_ul {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 100px;
+  width: 250px;
 }
 
 .classlist {
@@ -83,6 +87,9 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  margin-top: 100px;
+  padding-left: 30px;
 }
 
 .card__img {
@@ -91,21 +98,28 @@ body {
 }
 
 .card__ul {
-  padding-top: 80px;
+  padding-top: 20px;
   padding-left: 10px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .link__volver {
   display: flex;
-  position: absolute;
-
-  transform: translateY(-188px);
-  background-color: black;
+  position: relative;
+  transform: translate(-20px, -120px);
+  background-color: rgb(10, 212, 248);
   padding: 5px;
 }
 
 .card__name {
   font-size: 16px;
   font-weight: bold;
+}
+
+.problem_image {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
