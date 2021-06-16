@@ -5,6 +5,7 @@ import getDataFromApi from "../services/getDataFromApi";
 import Filters from "./Filters";
 import CharacterDetail from "./CharacterDetail";
 import "../stylesheets/App.css";
+import ls from "../services/localStorage";
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -13,6 +14,11 @@ const App = () => {
   useEffect(() => {
     getDataFromApi().then((data) => setUsers(data));
   }, []);
+
+  // useEffect(() => {
+  //   console.log("Guardado en localstorage", users);
+  //   ls.set("users", users);
+  // }, [users]);
 
   //event handlers
   const handleFilter = (data) => {

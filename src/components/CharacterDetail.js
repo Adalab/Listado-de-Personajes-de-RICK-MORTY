@@ -17,9 +17,9 @@ const CharacterDetail = (props) => {
       <ul>
         <li className="card__title">{props.user.name}</li>
         <li>Especie: {props.user.species}</li>
-        <li>Specie: {props.user.species}</li>
+        <li>Status: if ({props.user.status} === Alive)</li>
         <li>Origin: {props.user.origin}</li>
-        <li>Episode: {props.user.episode}</li>
+        //<li>Episode: {props.user.episode}</li>
       </ul>
     </section>
   );
