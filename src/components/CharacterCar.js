@@ -12,8 +12,8 @@ const CharacterCar = (props) => {
           alt={`Foto de: ${props.user.name}`}
           title={`Foto de: ${props.user.name}`}
         />
-        <h2 className="card__title">{props.user.name}</h2>
-        <h3 className="card__description">{props.user.species}</h3>
+        <h2 className="filter__title">{props.user.name}</h2>
+        <h3 className="filter__description">{props.user.species}</h3>
       </Link>
     </li>
   );

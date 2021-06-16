@@ -1,5 +1,6 @@
 import React from "react";
 import CharacterCar from "./CharacterCar";
+import User from "./CharacterCar";
 
 const CharacterList = (props) => {
   if (props.users.length === 0) {

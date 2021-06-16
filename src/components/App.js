@@ -5,6 +5,7 @@ import getDataFromApi from "../services/getDataFromApi";
 import Filters from "./Filters";
 import CharacterDetail from "./CharacterDetail";
 import "../stylesheets/App.css";
+import logo from "../Images/logo.png";
 import ls from "../services/localStorage";
 
 const App = () => {
@@ -45,7 +46,9 @@ const App = () => {
 
   return (
     <div>
-      <h1>Directorio de Rick y Morty</h1>
+      <h1>
+        <img className="logo__img" src={logo} alt="Ricky and Morty" />
+      </h1>
       <Switch>
         <Route exact path="/">
           <Filters handleFilter={handleFilter} />
