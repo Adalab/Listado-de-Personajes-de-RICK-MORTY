@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Route, Switch } from "react-router-dom";
 import CharacterList from "./CharacterList";
 import getDataFromApi from "../services/getDataFromApi";
 import Filters from "./Filters";
@@ -24,12 +25,28 @@ const App = () => {
     return user.name.toUpperCase().includes(nameFilter.toUpperCase());
   });
 
+  const renderCharacterDetail = (props) => {
+    const routerCharacterId = props.match.params.id;
+    const foundCharacter = users.find((user) => {
+      return user.id == routerCharacterId;
+    });
+    if (foundCharacter !== undefined) {
+      return <CharacterDetail user={foundCharacter} />;
+    } else {
+      return <p> ☠ usuario no encontrado</p>;
+    }
+  };
+
   return (
     <div>
       <h1>Directorio de Rick y Morty</h1>
-      <Filters handleFilter={handleFilter} />
-      <CharacterList users={filteredCharacters} />
-      <CharacterDetail />
+      <Switch>
+        <Route exact path="/">
+          <Filters handleFilter={handleFilter} />
+          <CharacterList users={filteredCharacters} />
+        </Route>
+        <Route path="/character/:id" render={renderCharacterDetail} />
+      </Switch>
     </div>
   );
 };

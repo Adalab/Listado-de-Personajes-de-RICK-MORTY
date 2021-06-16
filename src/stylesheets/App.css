@@ -50,3 +50,18 @@ body {
 .hidden {
   visibility: hidden;
 }
+
+.class__card {
+  background-color: chartreuse;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.link__volver {
+  background-color: black;
+  padding: 5px;
+}

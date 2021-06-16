@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const CharacterCar = (props) => {
-  console.log(props);
+  console.log(props.user.id);
   return (
     <li className="classlist">
       <Link to={`/character/${props.user.id}`}>
