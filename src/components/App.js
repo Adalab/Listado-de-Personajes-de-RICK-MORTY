@@ -16,10 +16,9 @@ const App = () => {
     getDataFromApi().then((data) => setUsers(data));
   }, []);
 
-  // useEffect(() => {
-  //   console.log("Guardado en localstorage", users);
-  //   ls.set("users", users);
-  // }, [users]);
+  useEffect(() => {
+    ls.set("users", users);
+  }, [users]);
 
   //event handlers
   const handleFilter = (data) => {

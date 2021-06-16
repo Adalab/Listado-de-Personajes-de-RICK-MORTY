@@ -1,6 +1,7 @@
 const get = (key) => {
   const data = localStorage.getItem(key);
-  if (data !== null) {
+  if (data === null) {
+  } else {
     return JSON.parse(data);
   }
 };
