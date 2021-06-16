@@ -40,7 +40,14 @@ const App = () => {
     if (foundCharacter !== undefined) {
       return <CharacterDetail user={foundCharacter} />;
     } else {
-      return <p> ☠ usuario no encontrado</p>;
+      return (
+        <div>
+          <div className="problem_image">
+            <img src="https://media.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif" />
+            El personaje que buscas no existe!!!!
+          </div>
+        </div>
+      );
     }
   };
 

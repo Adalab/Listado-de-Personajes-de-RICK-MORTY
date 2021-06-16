@@ -7,6 +7,7 @@ const CharacterList = (props) => {
     return (
       <div className="problem_image">
         <img src="https://media.giphy.com/media/YO45ydzTCoHdoR074O/giphy.gif" />
+        Búsqueda undefined!!!!!
       </div>
     );
   }
