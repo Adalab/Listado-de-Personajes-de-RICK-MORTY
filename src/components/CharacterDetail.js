@@ -13,12 +13,13 @@ const CharacterDetail = (props) => {
         alt={`Foto de: ${props.user.name}`}
         title={`Foto de: ${props.user.name}`}
       />
+
       <ul>
-        <h2 className="card__title">{props.user.name}</h2>
-        <h1>Especie: {props.user.species}</h1>
-        {/* <li>Specie: {props.user.species}</li>
-        <li>Origin: {props.user.origin.name}</li>
-        <li>Episode: {props.user.episode[]}</li> */}
+        <li className="card__title">{props.user.name}</li>
+        <li>Especie: {props.user.species}</li>
+        <li>Specie: {props.user.species}</li>
+        <li>Origin: {props.user.origin}</li>
+        <li>Episode: {props.user.episode}</li>
       </ul>
     </section>
   );
