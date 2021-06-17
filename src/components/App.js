@@ -42,7 +42,11 @@ const App = () => {
       return (
         <div>
           <div className="problem_image">
-            <img src="https://media.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif" />
+            <img
+              src="https://media.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif"
+              alt="gif rick y morty"
+              title="rick y morty"
+            />
             El personaje que buscas no existe!!!!
           </div>
         </div>

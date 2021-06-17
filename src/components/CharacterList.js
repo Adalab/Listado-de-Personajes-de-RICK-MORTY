@@ -1,12 +1,15 @@
 import React from "react";
 import CharacterCar from "./CharacterCar";
-import User from "./CharacterCar";
 
 const CharacterList = (props) => {
   if (props.users.length === 0) {
     return (
       <div className="problem_image">
-        <img src="https://media.giphy.com/media/YO45ydzTCoHdoR074O/giphy.gif" />
+        <img
+          src="https://media.giphy.com/media/YO45ydzTCoHdoR074O/giphy.gif"
+          alt="gif rick y morty"
+          title="rick y morty"
+        />
         Búsqueda undefined!!!!!
       </div>
     );
