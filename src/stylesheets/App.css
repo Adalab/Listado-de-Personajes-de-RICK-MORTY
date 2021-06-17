@@ -26,16 +26,10 @@ body {
 .filter__home {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
-}
-
-.class__list_ul {
-  max-width: 1000px;
-  position: relative;
-  display: flex;
 }
 
 .classlist {
@@ -123,4 +117,11 @@ body {
   align-items: center;
   font-size: px;
   color: rgb(10, 212, 248);
+}
+
+@media all and (min-width: 768px) {
+  .class__list_ul {
+    position: relative;
+    display: flex;
+  }
 }
