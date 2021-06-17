@@ -53,12 +53,14 @@ const App = () => {
   return (
     <div>
       <h1>
-        <img
-          className="logo__img"
-          src={logo}
-          alt="Ricky and Morty"
-          title="Ricky and Morty"
-        />
+        <a href="http://localhost:3000/">
+          <img
+            className="logo__img"
+            src={logo}
+            alt="Ricky and Morty"
+            title="Ricky and Morty"
+          />
+        </a>
       </h1>
       <Switch>
         <Route exact path="/">
