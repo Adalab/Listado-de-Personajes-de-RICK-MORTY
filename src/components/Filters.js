@@ -4,7 +4,7 @@ const Filters = (props) => {
   const handleChange = (ev) => {
     props.handleFilter({
       value: ev.target.value,
-      key: "name",
+      key: ev.target.id,
     });
   };
 
@@ -21,6 +21,14 @@ const Filters = (props) => {
           name="name"
           placeholder="Ric"
           id="name"
+          onChange={handleChange}
+        />
+        <input
+          className="form__input-text"
+          type="text"
+          name="location"
+          placeholder="localizacion"
+          id="location"
           onChange={handleChange}
         />
       </form>

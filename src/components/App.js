@@ -11,6 +11,7 @@ import ls from "../services/localStorage";
 const App = () => {
   const [users, setUsers] = useState([]);
   const [nameFilter, setNameFilter] = useState("");
+  const [locationFilter, setLocationFilter] = useState("");
 
   useEffect(() => {
     getDataFromApi().then((data) => setUsers(data));
@@ -24,12 +25,18 @@ const App = () => {
   const handleFilter = (data) => {
     if (data.key === "name") {
       setNameFilter(data.value);
+    } else if (data.key === "location") {
+      setLocationFilter(data.value);
     }
   };
 
-  const filteredCharacters = users.filter((user) => {
-    return user.name.toUpperCase().includes(nameFilter.toUpperCase());
-  });
+  const filteredCharacters = users
+    .filter((user) => {
+      return user.name.toUpperCase().includes(nameFilter.toUpperCase());
+    })
+    .filter((user) => {
+      return user.location.toUpperCase().includes(locationFilter.toUpperCase());
+    });
 
   const renderCharacterDetail = (props) => {
     const routerCharacterId = props.match.params.id;
